@@ -1,0 +1,19 @@
+{
+  "name": "recruiterphone",
+  "version": "0.0.2",
+  "private": false,
+  "scripts": {
+    "start": "twilio-run",
+    "deploy": "twilio-run deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "twilio-run": "^2.0.0"
+  },
+  "engines": {
+    "node": "10.17.0"
+  },
+  "dependencies": {
+    "@twilio-labs/serverless-runtime-types": "^1.1.8"
+  }
+}
