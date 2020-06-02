@@ -32,6 +32,16 @@ export type VoicemailHandler = ServerlessFunctionSignature<
   VoicemailEvent
 >;
 
+export type TextMessageEvent = {
+  From: string;
+  Body: string;
+};
+
+export type TextMessageHandler = ServerlessFunctionSignature<
+  EnvironmentVariables,
+  TextMessageEvent
+>;
+
 export function GetFromPhoneNumber(
   context: EnvironmentVariables,
   event: { From: string }
