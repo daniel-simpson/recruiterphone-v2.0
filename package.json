@@ -3,12 +3,17 @@
   "version": "0.0.2",
   "private": false,
   "scripts": {
+    "clean": "npx rimraf functions/*",
+    "prestart": "npm run clean && tsc",
     "start": "twilio-run",
+    "predeploy": "tsc",
     "deploy": "twilio-run deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "twilio-run": "^2.0.0"
+    "@types/node": "^14.0.5",
+    "twilio-run": "^2.0.0",
+    "typescript": "^3.9.3"
   },
   "engines": {
     "node": "10.17.0"
