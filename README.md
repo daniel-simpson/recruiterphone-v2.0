@@ -10,8 +10,8 @@ Still a work in progress at the moment but the idea is:
 
 - For incoming calls:
   - FUTURE ENHANCEMENT: If there is no caller ID, screen it (skip forwarding to my phone number)
-  - Try to forward the call to my actual phone number
-  - If that fails, play a voicemail message
+  - FUTURE ENHANCEMENT: Try to forward the call to my actual phone number
+  - Play a voicemail message and take a message
   - FUTURE ENHANCEMENT: Log the call details to a CRM (Airtable at present)
 - For incoming messages:
   - Forward through to my actual phone number
