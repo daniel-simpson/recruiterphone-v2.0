@@ -4,9 +4,11 @@
   "private": false,
   "scripts": {
     "clean": "npx rimraf functions/*",
-    "prestart": "npm run clean && tsc",
+    "precompile": "npm run clean",
+    "compile": "tsc",
+    "prestart": "npm run compile",
     "start": "twilio-run",
-    "predeploy": "tsc",
+    "predeploy": "npm run compile",
     "deploy": "twilio-run deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
