@@ -35,6 +35,10 @@ I've got a few half-baked ideas around outgoing calls and texts, but I'll play a
 - Add the serverless runtime plugin: `twilio plugins:install @twilio-labs/plugin-serverless`
 - Clone the repo
 - Install dependencies `npm i`
+- Set up `.env` with valid data:
+  - Create a new `.env` file using the .env.example file as a template. Note that this file is git-ignored and will not be source controlled.
+  - To get Airtable API keys open [your account page](https://airtable.com/account), generate an API key, and add it to your local .env file as `AIRTABLE_API_KEY`
+  - Add AIRTABLE_BASE_ID environment variable (this will be the part after `https://airtable.com/<BASE_ID>` when opening your base)
 - Run a development environment with `npm start`
 - Deploy to twilio with `npm run deploy`
 - TODO: tests

@@ -13,6 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@types/airtable": "^0.8.0",
     "@types/node": "^14.0.5",
     "twilio-run": "^2.0.0",
     "typescript": "^3.9.3"
@@ -21,6 +22,7 @@
     "node": "10.17.0"
   },
   "dependencies": {
-    "@twilio-labs/serverless-runtime-types": "^1.1.8"
+    "@twilio-labs/serverless-runtime-types": "^1.1.8",
+    "airtable": "^0.8.1"
   }
 }
