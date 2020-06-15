@@ -6,6 +6,8 @@ export type AirtableContact = {
     Name: string;
     Phone: string;
     Recruiter: boolean;
+    // Opportunity: string[];
+    // Business: string[];
     "Opportunity Name": string;
     "Opportunity Business": string;
     "Opportunity Statuses": string[];
@@ -26,7 +28,7 @@ export const getContactByPhoneNumber = async (
   const contactRecords = await base("Contacts")
     .select({
       maxRecords: 1,
-      filterByFormula: `{Phone}=${phoneNumber}`,
+      filterByFormula: `{Phone} = '${phoneNumber}'`,
     })
     .all();
 
